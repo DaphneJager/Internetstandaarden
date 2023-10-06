@@ -9,34 +9,12 @@ header{
     color: whitesmoke;
 }
 
-/* grote plaatje header*/
-header img{
-    margin: 0 auto;
-    width: 100vw;
-    opacity: 0.9;
-}
-
-/* text op grote plaatje header*/ 
-.container{
-    position: relative;
-}
-
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 13vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transform: translate(-50%,-50%);
-}
-
 /* algemeen opmaak body, main & footer*/
 body{
     background: #2e8b80;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: whitesmoke; 
 }
-
 
 main{
     background-color: #2e8b80
@@ -59,48 +37,12 @@ h1{
     padding: 1vw 1vw 1vw 1vw;
 }
 
-
-
-.fotos {
-    width: 80%;
-    margin: 5% auto 10%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
+footer{
+    background-color:#1d5c55;
 }
 
-.fotos img {
-    width: 80%;
-    height: 100%;
-}
 
-.fotos img:hover {
-    transform: scale(1.2) rotate(-15deg);
-    border-radius: 5%;
-}
-
-.mainfoto {
-    width: 30%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.manook {
-    float: left;
-    padding: 1% 1% 1% 1%;
-}
-
-main img{
-    float: inline-end;
-    max-width: 80%;
-    max-height: 80%;
-    margin: 0vw 2vw 2vw 2vw;
-    border-radius: 2%;
-    display: flex;
-}
-
+/*navigatie*/
 a:hover{ 
     background-color:#2e8b80
 }
@@ -139,19 +81,98 @@ nav li :first-of-type{
 
 }
 
-article img{
-    max-width: 100%;
+/*index grote plaatje header*/
+header img{
+    margin: 0 auto;
+    width: 100vw;
+    opacity: 0.9;
+}
+
+/*index text op grote plaatje header*/ 
+.container{
+    position: relative;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 13vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: translate(-50%,-50%);
+}
+
+/*index foto's maya en nanook*/
+.mainfoto {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.manook {
+    float: left;
+    padding: 1% 1% 1% 1%;
+}
+
+main img{
+    float: inline-end;
+    max-width: 80%;
     max-height: 80%;
-    border-radius: 2%;
-    float: right;
+    margin: 0vw 2vw 1vw 2vw;
+    display: flex;
 }
 
-article{
-    padding: 1vw 1vw 1vw 1vw;
-    margin-right: 1vw;
+section {
+    display: flex;
 }
 
-/*contact pagine*/
+section img{
+    padding: 5% 3% 5% 3%;
+    border-radius: 3px;
+}
+
+/*gallerij*/
+.fotos {
+    width: 80%;
+    margin: 5% auto 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.fotos img {
+    width: 100%;
+    height: 120%;
+}
+
+.fotos img:hover {
+    transform: scale(1.2) rotate(-15deg);
+    border-radius: 5%;
+}
+
+/*hondenrasinformatie*/
+main :nth-child(3){
+    word-wrap: break-word;
+    width: 80%;
+}
+
+main :nth-child(6){
+    word-wrap: break-word;
+    width: 80%;
+}
+
+main :nth-child(4){
+    height: 50%;
+    width: 50%;
+}
+
+main :nth-child(7){
+    height: 50%;
+    width: 50%;
+}
+
+/*contact pagina*/
 .contact {
     border: solid 2px #1d5c55;
     padding: 2% 2% 2% 2%;
@@ -165,23 +186,5 @@ article{
 
 .contact h2{
     padding: 0%;
-}
-
-
-section {
-    display: flex;
-}
-
-section img{
-    padding: 5% 3% 5% 3%;
-    border-radius: 3px;
-
-}
-
-
-
-/*footer*/
-footer{
-    background-color:#1d5c55;
 }
 
